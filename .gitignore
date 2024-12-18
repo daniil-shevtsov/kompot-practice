@@ -1,0 +1,31 @@
+# Android Studio
+*.iml
+/.idea/*
+!/.idea/codeStyles/
+!/.idea/inspectionProfiles/
+!/.idea/runConfigurations/
+!/.idea/vcs.xml
+/captures/
+
+# Gradle
+.gradle/
+build/
+generated/
+settings-focus.gradle
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Mac DS_Store files
+.DS_Store
+
+# UI Tests
+.allure
+marathon*/
+
+# TeamCity
+/.teamcity/.idea/*
+/.teamcity/target/*
+
+# Kotlin
+.kotlin/
