@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kapt)
 }
 
 android {
@@ -36,11 +37,14 @@ android {
 }
 
 dependencies {
-
+    implementation("com.revolut.kompot:kompot:0.0.2")
+//    kapt("com.google.dagger:dagger-compiler:2.40.2")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+//    testImplementation("com.revolut.kompot:core-test:0.0.2")
+//    testImplementation("com.revolut.kompot:coroutines-test:0.0.2")
+//    androidTestImplementation(libs.androidx.junit)
+//    androidTestImplementation(libs.androidx.espresso.core)
 }
